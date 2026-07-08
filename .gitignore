@@ -1,2 +1,8 @@
+# Virtual Environment
 .venv
+
+# Unprocessed Data
 /data/raw
+
+# Notebook Checkpoints 
+.ipynb_checkpoints
