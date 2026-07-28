@@ -34,6 +34,7 @@ Churn:
 The raw dataset contains one-missing value issue in total_charges, which is handled during data cleaning.
 
 ## Project Structure
+```
 CustomerChurnPrediction/
 ├── data
 │   ├── clean
@@ -79,6 +80,7 @@ CustomerChurnPrediction/
     ├── main.py
     ├── modeling.py
     └── wrangling.py
+```
 ## Setup & Installation
 Clone the repository
 ```bash
