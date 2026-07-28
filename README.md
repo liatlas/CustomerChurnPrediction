@@ -172,6 +172,7 @@ Out of the models that were evaluated, logistic regression had the best recall, 
 
 ## Key Findings
 * Customer tenure is strongly associated with churn
+![Churn by Tenure](outputs/figures/tenure_by_churn.png)
 * Customers with month-to-month contracts are considerably more likely to churn than customers with longer-term contracts
 * Monthly chrages are positively associated with churn
 * Customers lacking services such as Tech Support and Online Security have higher churn rates
