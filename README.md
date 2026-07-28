@@ -174,8 +174,12 @@ Out of the models that were evaluated, logistic regression had the best recall, 
 * Customer tenure is strongly associated with churn
 ![Churn by Tenure](outputs/figures/tenure_by_churn.png)
 * Customers with month-to-month contracts are considerably more likely to churn than customers with longer-term contracts
+![Churn by Contract](outuputs/figures/contract_churn.png)
 * Monthly chrages are positively associated with churn
+![Monthly Charges by Churns](outputs/figures/monthly_charges_by_churn.png)
 * Customers lacking services such as Tech Support and Online Security have higher churn rates
+![Tech support by churn](outputs/figures/tech_support_churn.png)
+![online security by churn](outputs/figures/online_security_churn.png)
 * Logistic Regression provided the best overall predictive performance among the evaluated models.
 * Gradient Boosintg and SVM achieved comparable performance while Random Forest performed slightly worse on this dataset
 
