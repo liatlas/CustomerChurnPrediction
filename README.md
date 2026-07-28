@@ -162,6 +162,7 @@ models evaluated:
 
 ### Model Performance:
 | model | precision | recall | f1-score |
+|---|---|---|---|
 | logistic regression | 0.79 | 0.8 | 0.79 |
 | SVC | 0.77 | 0.79 | 0.77 |
 | Gradient Boosting | 0.77 | 0.78 | 0.77 |
