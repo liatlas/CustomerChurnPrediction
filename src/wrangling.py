@@ -1,5 +1,6 @@
-import pandas as pd
 import numpy as np
+import pandas as pd
+
 
 # Helper Functions
 def to_snake_case(s):
@@ -17,7 +18,7 @@ def remove_columns(df: pd.DataFrame) -> pd.DataFrame:
 
     df_copy = df.copy()
 
-    df_copy.drop("customerID", axis=1)
+    df_copy = df_copy.drop("customerID", axis=1)
 
     return df_copy
 
@@ -82,9 +83,17 @@ def save_df(df: pd.DataFrame) -> pd.DataFrame:
     df.to_csv("../data/clean/dataset.csv", index=False)
 
 def main():
-    df = load()
+    df = (
+        load()
+        .pipe(remove_columns)
+        .pipe(convert_column_names)
+        .pipe(convert_bool_types)
+        .pipe(remove_missing_values)
+        .pipe(convert_float_types)
+    )
 
-    df.pipe
+    save_df(df)
+    print("Saved cleaned dataset.")
 
 if __name__ == "__main__":
     main()
